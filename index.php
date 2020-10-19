@@ -44,8 +44,6 @@ session_start();
 
                     <div class="cadastrar">
 
-                        <a href="./view/user/bot-redire-usuario.php">Cadastrar-se</a>
-
                         <a href="../bpa/view/user/bot-redire-usuario.php">Cadastrar</a>
 
                     </div>
