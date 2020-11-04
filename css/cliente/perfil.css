@@ -1,0 +1,213 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+  
+header{
+    z-index: 1;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 70px;
+    font-family: 'Segoe UI';
+  }
+  
+  .left_area h3{
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: left;
+  }
+  
+.left_area span{
+    color: #19B3D3;
+    padding-left: 45px;
+    font-size: 25px;
+}
+  
+  .logout_btn{
+    padding: 5px;
+    background: #40e0d0;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 50px;
+    color: black;
+    transition: 0.5s;
+    transition-property: background;
+  }
+  
+  .logout_btn:hover{
+    background: red;
+  }
+  
+  .sidebar{
+    z-index: 1;
+    top: 0;
+    background: #40e0d0;
+    margin-top: 70px;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 0%);
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+  }
+  
+  .profile_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar .profile_info .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .profile_info h4{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar a{
+    color: black;
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    text-decoration: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  
+  .sidebar a:hover{
+    background: #19B3D3;
+  }
+  
+  .sidebar i{
+    padding-right: 5px;
+  }
+  
+  label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 20px;
+    font-size: 25px;
+    margin: 1px 0;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  
+  label #sidebar_btn:hover{
+    color: red;
+  }
+  
+  #check:checked ~ .sidebar{
+    left: -185px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 18px;
+    margin-left: 190px;
+    width: 20%;
+    padding: 20px;
+    transition: 0.7s;
+  }
+
+  h1{
+    text-align: center;
+    padding: 40px;
+  }
+  .content{
+    width: (100% - 250px);
+    margin-top: 60px;
+    padding: 10px;
+    margin-left: 200px;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    transition: 0.5s;
+  }
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+  }
+  
+  #check:checked ~ .sidebar .profile_info{
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  .mobile_nav{
+    display: none;
+  }
+
+#dados{
+  margin-left: 30%;
+  text-align: justify;
+  font-size: 30px;
+  margin-top: 70px;
+}
+  
+  #dados input[type=text], input[type=email], input[type=tel]{
+    width:60%;
+    box-sizing:border-box;
+    font-size: 15px;
+    padding: 7px;
+  }
+  
+  #dados input[type=button], input[type=submit]{
+    background-color: #40e0d0;
+    padding: 10px 10px;
+    margin: 50px 15px;
+    margin-left: 7%;
+    border: 2px inherit #000000;
+    font-weight: bold;
+    cursor: pointer;
+    width: 19%;
+    border-radius: 30px;
+    font-weight: normal;
+    color: black;
+  }
+  
+  #dados input[type=button]:hover, input[type=submit]:hover{
+    background-color: #000000;
+    font-weight: bolder;
+    color: white;
+  }
+  
+  #dados input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
+    background-color: rgb(212, 244, 245);
+    }
+  
+  #dados input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover{
+      background-color: rgb(212, 244, 245);
+  }
+    
