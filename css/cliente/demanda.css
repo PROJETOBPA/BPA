@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  font-weight: lighter;
+}
+
+.desc-text h1{ 
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  width: 100%; 
+  height: 60px;
+  padding: 5px;
+  background-color: black;
+}
+
+.card-center{
+  margin-top: 10%;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  background-color: rgba(252, 251, 251, 0.979);
+  margin-left: 25%;
+  border-radius: 7px;
+  box-shadow: 0 5px 15px 5px #0000005b;
+}
+  
+.titulo h2{
+  font-weight: lighter;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  padding: 25px;  
+}
+    
+.input[type=text] {
+  width: 30%;
+  height: 30px;
+  padding: 10px 10px;
+  margin: 15px 0;
+  margin-left: 45%;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.507);
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.textareadiv {
+  margin-left: 295px;
+}
+  
+.input[type=text]:focus, .textarea:focus{
+  background-color: rgb(212, 244, 245);
+  }
+
+  input[type=text]:hover, textarea:hover{
+    background-color: rgb(212, 244, 245);
+}
+
+.categoria, .servicos, .Estado, .Cidade {
+  margin-left: 35%;
+  padding: 0 0 10px 0px;
+}
+
+.categoria select, .servicos select, .Estado select, .Cidade select{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 350px;
+  border: 1px solid black;
+  font-size: 17px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.212);
+  outline: none;
+  height: 40px;
+}
+
+.categoria select:hover, .servicos select:hover, .Estado select:hover, .Cidade select:hover {
+  background-color: rgb(212, 244, 245);
+}
+
+.categoria select option, .servicos select option, .Estado select option, .Cidade select option {
+  padding: 30px;
+  background-color: rgb(212, 244, 245);
+  font-weight: bold;
+}
+
+.button-enviar input{
+  background-color: #40e0d0;
+  padding: 10px 10px;
+  margin: 15px;
+  margin-left: 45%;
+  border: 2px inherit #000000;
+  cursor: pointer;
+  width: 15%;
+  border-radius: 30px;
+  font-weight: normal;
+}
+    
+.button-enviar input:hover {
+  background-color: #000000;
+  font-weight: bolder;
+  color: white;
+} 
+
+/* ------------------------------ */
+
+header{
+  z-index: 1;
+  position: fixed;
+  background: #22242A;
+  padding: 35px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 40px;
+}
+
+.left_area h3{
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 1000;
+  padding-left: 45px;
+  margin-top: -20px;
+}
+
+.left_area span{
+  color: #19B3D3;
+  padding-left: 45px;
+}
+
+.logout_btn{
+  padding: 5px;
+  background: #40e0d0;
+  text-decoration: none;
+  float: right;
+  margin-top: -25px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 900;
+  color: black;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.logout_btn:hover{
+  background: red;
+}
+
+.sidebar{
+  z-index: 1;
+  top: 0;
+  background: #40e0d0;
+  margin-top: 70px;
+  padding-top: 50px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 0%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+}
+
+.profile_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .profile_info .profile_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4{
+  color: black;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  color: black;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: #19B3D3;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 15px;
+  font-size: 25px;
+  margin-top: -15px;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: red;
+}
+
+#check:checked ~ .sidebar{
+  left: -185px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.content{
+  width: (100% - 250px);
+  margin-top: 60px;
+  padding: 20px;
+  margin-left: 250px;
+  background: url(background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check:checked ~ .sidebar .profile_info{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.mobile_nav{
+  display: none;
+}
+
+.content .card p{
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+        

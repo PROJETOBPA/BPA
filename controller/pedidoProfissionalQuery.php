@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include_once("../connection/conexao.php");
+include_once("../db/connection.php");
 
 $iddemanda = $_REQUEST['iddemanda'];
 $idusuario = mysqli_real_escape_string($conn, $_SESSION['idusuario']);
@@ -17,11 +17,10 @@ if(!mysqli_query($conn, $query_cadastro)){
     );
     mysqli_close($conn);
     
-
 }else{
     echo 'Deu certo a Inserção!';
 
     mysqli_close($conn);
 }
-header('location:../view/area-profissional/pedidos-profissional.php');
+header('location:../view/profissional/pedido.php');
 ?>

@@ -1,7 +1,7 @@
 <?php
 
     //Conexão para concluir o cadastro
-    include_once("../connection/conexao.php");
+    include_once("../db/connection.php");
     session_start();
 
     $nome = mysqli_real_escape_string($conn, $_POST['nome']);
@@ -10,6 +10,7 @@
 
     $query = "INSERT INTO usuario(nome, email, senha, tipo)
                 VALUES('$nome', '$email', $senha, 0)";
+
 
     if(!mysqli_query($conn, $query)){
         die("$query <br> Falha na Execução da Query"
