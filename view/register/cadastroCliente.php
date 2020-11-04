@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/cadastroCliente.css">
+    <link rel="stylesheet" href="../../css/register/cadastroCliente.css">
     <title>Cadastro Cliente</title>
 </head>
 
 <body>
     <div class="container">
 
-        <header>
-
             <!--Título-->
             <div class="desc-text">
                 <h1>Realialize seu Cadastro para Fazer Pedidos!</h1>
             </div>
 
-        </header>
-
         <!--Imagem-->
         <div class="card-center">
 
             <div class="img-center-cad">
-                <img src="../../img/GDPR-rafiki.svg">
+                <img src="../../img/Authentication-rafiki.png">
             </div>
 
             <!--Form para cadastrar o usuário-->

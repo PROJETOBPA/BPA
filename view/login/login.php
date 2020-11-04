@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/login/login.css">
     <title>Faça seu Login</title>
 </head>
 
@@ -23,7 +23,7 @@ session_start();
 
         </header>
 
-            <form action="../../controller/result.php" method="post">
+            <form action="../../controller/loginQuery.php" method="post">
                    
                 <div class="img-center">
                     <img src="../../img/Security On-amico.svg">
@@ -34,15 +34,9 @@ session_start();
                 </div>
 
                 <div class="form-signin">
-				    <?php
-					    if(isset($_SESSION['msg'])){
-						    echo $_SESSION['msg'];
-						    unset($_SESSION['msg']);
-					    }
-					    if(isset($_SESSION['msgcad'])){
-						    echo $_SESSION['msgcad'];
-						    unset($_SESSION['msgcad']);
-					    }   
+                    <?php
+                    
+                    $query = "SELECT * FROM usuario";					   
                     ?>
                 </div>
                 
@@ -57,7 +51,7 @@ session_start();
                 </label>
 
                 <div class="redf">
-                    <a href="#">Redefinir Senha</a>
+                    <a href="../login/redefinicao.php">Redefinir Senha</a>
                 </div>
 
                 <div class="button">
