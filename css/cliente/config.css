@@ -134,7 +134,7 @@ label #sidebar_btn:hover{
 
 .content{
   width: (100% - 200px);
-  margin-top: 0px;
+  margin-top: 100px;
   padding: 20px;
   margin-left: 300px;
   background: url(background.png) no-repeat;
@@ -172,9 +172,9 @@ label #sidebar_btn:hover{
   width: 90%;
   height: 50vh;
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 110px;
   justify-content: center;
 }
 
@@ -188,36 +188,37 @@ label #sidebar_btn:hover{
   border-bottom: 1px solid gray;
   display: flex;
   padding: 1px;
-  margin-top: 60px;
+  width: 1000px;
+  margin-top: 10px;
   justify-content: space-between;
 }
 
 .card-conf .icon {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px 10px;
 }
 
 .card-conf .text {
   flex: 1;
-  padding: 5px 15px;
-  font-size: 15px;
-  width: 300px;
+  padding: 5px 8px;
+  font-size: 20px;
+  width: 200px;
 }
 
 .text-clear{
   flex: 1;
-  padding: 15px 30px;
-  font-size: 15px;
+  padding: 7px 14px;
+  font-size: 20px;
 }
 
 .text-term{
   flex: 1;
-  padding: 15px 30px;
-  font-size: 15px;
+  padding: 7px 14px;
+  font-size: 20px;
 }
 
 .icon-action {
-  padding: 15px;
+  padding: 7px;
 }
 
 .icon-action a {
