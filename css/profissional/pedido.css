@@ -141,10 +141,10 @@ header{
     transition: 0.7s;
   }
 
-  h1{
+h1{
     text-align: center;
-    padding: 20px;
-  }
+    padding: 50px;
+ }
 
   .content{
     width: (100% - 100px);
