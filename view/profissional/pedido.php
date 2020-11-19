@@ -77,6 +77,7 @@
           ?>
 
           <div class="sub-container">
+             <h1>Os clientes que solicitaram você, aceite para que eles possam entrar em contato com você!</h1>
             <?php
               $query = "SELECT *
               FROM demanda
