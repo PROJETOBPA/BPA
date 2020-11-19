@@ -109,7 +109,7 @@
                             <td><?php echo $row['nome'].'<br>'; ?></td>
                             <td><?php echo $row['categoria'].'<br>'; ?></td>
                             <td><?php echo $row['servico'].'<br>'; ?></td>
-                            <td><a href="https://api.whatsapp.com/send?phone=<?php echo $row['telefone']; ?>" 
+                            <td><a href="https://api.whatsapp.com/send?phone=<?php echo $row['telefone'];?>&text=Olá%20Profissional, podemos conversar sobre as condições do serviço que solicitei?" 
                             target="_blank">
                             <img  class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png" />
                             </a></td>
