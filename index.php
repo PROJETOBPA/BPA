@@ -47,7 +47,7 @@ session_start();
 				</section>
 
 				<section id="banner">
-					<p>Encontre Profissionais confiavéis de acordo com a sua nessecidade no Busca de Profissionais Autônomos!</p>
+					<p>Encontre Profissionais confiavéis de acordo com a sua necessidade no Busca de Profissionais Autônomos!</p>
 					<ul class="actions special">
 						<li><a href="../bpa-main/view/login/login.php" class="button primary">Login</a></li>
 						<li><a href="../bpa-main/view/user/redirecionarUser.php" class="button">Cadastrar</a></li>
